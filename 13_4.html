@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<title>Комп'ютерні комплектуючі</title>
+	</head>	
+	<body>
+		<nav>
+            <ul>
+                <li><a href="index.html"> Main page</a></li>
+                <li><a href="13_1.html"> Task 1</a></li>
+                <li><a href="13_2.html"> Task 2</a></li>
+                <li><a href="13_3.html"> Task 3</a></li>
+                <li><a href="13_4.html"> Task 4</a></li>
+                <li><a href="13_5.html"> Task 5</a></li>
+                <li><a href="13_6.html"> Task 6</a></li>
+                <li><a href="13_7.html"> Task 7</a></li>
+                <li><a href="13_8.html"> Task 8</a></li>
+
+            </ul>
+        </nav>
+		<script>
+			// Функція для розрахунку загальної вартості комплектуючих
+			function calculateTotalCost(cpu, gpu, ram, storage) {
+				return cpu + gpu + ram + storage;
+			}
+
+			// Вартість комплектуючих
+			let cpuPrice = 22000; // Вартість процесора
+			let gpuPrice = 53000; // Вартість відеокарти
+			let ramPrice = 8000; // Вартість оперативної пам'яті
+			let storagePrice = 5000; // Вартість накопичувача
+
+			// Виклик функції
+			let totalCost = calculateTotalCost(cpuPrice, gpuPrice, ramPrice, storagePrice);
+
+			// Виведення результату
+			document.write("Комплектуючі комп'ютера:<br>");
+			document.write("Процесор: " + cpuPrice + " грн<br>");
+			document.write("Відеокарта: " + gpuPrice + " грн<br>");
+			document.write("Оперативна пам'ять: " + ramPrice + " грн<br>");
+			document.write("Накопичувач: " + storagePrice + " грн<br>");
+			document.write("<strong>Загальна вартість: " + totalCost + " грн</strong>");
+		</script>
+	</body>
+</html>

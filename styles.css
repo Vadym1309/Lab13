@@ -1,0 +1,418 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    animation: smoothBackgroundAnimation 20s infinite alternate;
+}
+
+/* Плавна анімація фону */
+@keyframes smoothBackgroundAnimation {
+    0% {
+        background: linear-gradient(to right, #ff6a00, #ee0979);
+    }
+    1% {
+        background: linear-gradient(to right, #ff6b00, #ee1079);
+    }
+    2% {
+        background: linear-gradient(to right, #ff6c00, #ee2079);
+    }
+    3% {
+        background: linear-gradient(to right, #ff6d00, #ee3079);
+    }
+    4% {
+        background: linear-gradient(to right, #ff6e00, #ee4079);
+    }
+    5% {
+        background: linear-gradient(to right, #ff6f00, #ee5079);
+    }
+    6% {
+        background: linear-gradient(to right, #ff7000, #ee6079);
+    }
+    7% {
+        background: linear-gradient(to right, #ff7100, #ee7079);
+    }
+    8% {
+        background: linear-gradient(to right, #ff7200, #ee8079);
+    }
+    9% {
+        background: linear-gradient(to right, #ff7300, #ee9079);
+    }
+    10% {
+        background: linear-gradient(to right, #ff7400, #eeA079);
+    }
+    11% {
+        background: linear-gradient(to right, #ff7500, #eeB079);
+    }
+    12% {
+        background: linear-gradient(to right, #ff7600, #eeC079);
+    }
+    13% {
+        background: linear-gradient(to right, #ff7700, #eeD079);
+    }
+    14% {
+        background: linear-gradient(to right, #ff7800, #eeE079);
+    }
+    15% {
+        background: linear-gradient(to right, #ff7900, #eeF079);
+    }
+    16% {
+        background: linear-gradient(to right, #ff7a00, #f00079);
+    }
+    17% {
+        background: linear-gradient(to right, #ff7b00, #f10079);
+    }
+    18% {
+        background: linear-gradient(to right, #ff7c00, #f20079);
+    }
+    19% {
+        background: linear-gradient(to right, #ff7d00, #f30079);
+    }
+    20% {
+        background: linear-gradient(to right, #ff7e00, #f40079);
+    }
+    21% {
+        background: linear-gradient(to right, #ff7f00, #f50079);
+    }
+    22% {
+        background: linear-gradient(to right, #ff8000, #f60079);
+    }
+    23% {
+        background: linear-gradient(to right, #ff8100, #f70079);
+    }
+    24% {
+        background: linear-gradient(to right, #ff8200, #f80079);
+    }
+    25% {
+        background: linear-gradient(to right, #ff8300, #f90079);
+    }
+    26% {
+        background: linear-gradient(to right, #ff8400, #fa0079);
+    }
+    27% {
+        background: linear-gradient(to right, #ff8500, #fb0079);
+    }
+    28% {
+        background: linear-gradient(to right, #ff8600, #fc0079);
+    }
+    29% {
+        background: linear-gradient(to right, #ff8700, #fd0079);
+    }
+    30% {
+        background: linear-gradient(to right, #ff8800, #fe0079);
+    }
+    31% {
+        background: linear-gradient(to right, #ff8900, #ff1079);
+    }
+    32% {
+        background: linear-gradient(to right, #ff8a00, #ff2079);
+    }
+    33% {
+        background: linear-gradient(to right, #ff8b00, #ff3079);
+    }
+    34% {
+        background: linear-gradient(to right, #ff8c00, #ff4079);
+    }
+    35% {
+        background: linear-gradient(to right, #ff8d00, #ff5079);
+    }
+    36% {
+        background: linear-gradient(to right, #ff8e00, #ff6079);
+    }
+    37% {
+        background: linear-gradient(to right, #ff8f00, #ff7079);
+    }
+    38% {
+        background: linear-gradient(to right, #ff9000, #ff8079);
+    }
+    39% {
+        background: linear-gradient(to right, #ff9100, #ff9079);
+    }
+    40% {
+        background: linear-gradient(to right, #ff9200, #ffA079);
+    }
+    41% {
+        background: linear-gradient(to right, #ff9300, #ffB079);
+    }
+    42% {
+        background: linear-gradient(to right, #ff9400, #ffC079);
+    }
+    43% {
+        background: linear-gradient(to right, #ff9500, #ffD079);
+    }
+    44% {
+        background: linear-gradient(to right, #ff9600, #ffE079);
+    }
+    45% {
+        background: linear-gradient(to right, #ff9700, #ffF079);
+    }
+    46% {
+        background: linear-gradient(to right, #ff9800, #ff007f);
+    }
+    47% {
+        background: linear-gradient(to right, #ff9900, #ff107f);
+    }
+    48% {
+        background: linear-gradient(to right, #ff9a00, #ff207f);
+    }
+    49% {
+        background: linear-gradient(to right, #ff9b00, #ff307f);
+    }
+    50% {
+        background: linear-gradient(to right, #ff9c00, #ff407f);
+    }
+    51% {
+        background: linear-gradient(to right, #ff9d00, #ff507f);
+    }
+    52% {
+        background: linear-gradient(to right, #ff9e00, #ff607f);
+    }
+    53% {
+        background: linear-gradient(to right, #ff9f00, #ff707f);
+    }
+    54% {
+        background: linear-gradient(to right, #ffa000, #ff807f);
+    }
+    55% {
+        background: linear-gradient(to right, #ffa100, #ff907f);
+    }
+    56% {
+        background: linear-gradient(to right, #ffa200, #ffa07f);
+    }
+    57% {
+        background: linear-gradient(to right, #ffa300, #ffb07f);
+    }
+    58% {
+        background: linear-gradient(to right, #ffa400, #ffc07f);
+    }
+    59% {
+        background: linear-gradient(to right, #ffa500, #ffd07f);
+    }
+    60% {
+        background: linear-gradient(to right, #ffa600, #ffe07f);
+    }
+    61% {
+        background: linear-gradient(to right, #ffa700, #fff07f);
+    }
+    62% {
+        background: linear-gradient(to right, #ffa800, #ff0000);
+    }
+    63% {
+        background: linear-gradient(to right, #ffa900, #ff1000);
+    }
+    64% {
+        background: linear-gradient(to right, #ffaa00, #ff2000);
+    }
+    65% {
+        background: linear-gradient(to right, #ffab00, #ff3000);
+    }
+    66% {
+        background: linear-gradient(to right, #ffac00, #ff4000);
+    }
+    67% {
+        background: linear-gradient(to right, #ffad00, #ff5000);
+    }
+    68% {
+        background: linear-gradient(to right, #ffae00, #ff6000);
+    }
+    69% {
+        background: linear-gradient(to right, #ffaf00, #ff7000);
+    }
+    70% {
+        background: linear-gradient(to right, #ffb000, #ff8000);
+    }
+    71% {
+        background: linear-gradient(to right, #ffb100, #ff9000);
+    }
+    72% {
+        background: linear-gradient(to right, #ffb200, #ffa000);
+    }
+    73% {
+        background: linear-gradient(to right, #ffb300, #ffb000);
+    }
+    74% {
+        background: linear-gradient(to right, #ffb400, #ffc000);
+    }
+    75% {
+        background: linear-gradient(to right, #ffb500, #ffd000);
+    }
+    76% {
+        background: linear-gradient(to right, #ffb600, #ffe000);
+    }
+    77% {
+        background: linear-gradient(to right, #ffb700, #fff000);
+    }
+    78% {
+        background: linear-gradient(to right, #ffb800, #ff0000);
+    }
+    79% {
+        background: linear-gradient(to right, #ffb900, #ff1000);
+    }
+    80% {
+        background: linear-gradient(to right, #ffba00, #ff2000);
+    }
+    81% {
+        background: linear-gradient(to right, #ffbb00, #ff3000);
+    }
+    82% {
+        background: linear-gradient(to right, #ffbc00, #ff4000);
+    }
+    83% {
+        background: linear-gradient(to right, #ffbd00, #ff5000);
+    }
+    84% {
+        background: linear-gradient(to right, #ffbe00, #ff6000);
+    }
+    85% {
+        background: linear-gradient(to right, #ffbf00, #ff7000);
+    }
+    86% {
+        background: linear-gradient(to right, #ffc000, #ff8000);
+    }
+    87% {
+        background: linear-gradient(to right, #ffc100, #ff9000);
+    }
+    88% {
+        background: linear-gradient(to right, #ffc200, #ffa000);
+    }
+    89% {
+        background: linear-gradient(to right, #ffc300, #ffb000);
+    }
+    90% {
+        background: linear-gradient(to right, #ffc400, #ffc000);
+    }
+    91% {
+        background: linear-gradient(to right, #ffc500, #ffd000);
+    }
+    92% {
+        background: linear-gradient(to right, #ffc600, #ffe000);
+    }
+    93% {
+        background: linear-gradient(to right, #ffc700, #fff000);
+    }
+    94% {
+        background: linear-gradient(to right, #ffc800, #ff0000);
+    }
+    95% {
+        background: linear-gradient(to right, #ffc900, #ff1000);
+    }
+    96% {
+        background: linear-gradient(to right, #ffca00, #ff2000);
+    }
+    97% {
+        background: linear-gradient(to right, #ffcb00, #ff3000);
+    }
+    98% {
+        background: linear-gradient(to right, #ffcc00, #ff4000);
+    }
+    99% {
+        background: linear-gradient(to right, #ffcd00, #ff5000);
+    }
+    100% {
+        background: linear-gradient(to right, #8000ff, #7f007f);
+    }
+}
+
+body {
+    animation: smoothBackgroundAnimation 100s infinite;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Початковий фон */
+    background-size: 400% 400%;
+    height: 100vh;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+
+/* Стилі для навігації */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    color: #ffe600;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffe600;
+    color: #000;
+    border-color: #fff;
+}
+
+/* Анімація заголовків */
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff; }
+    100% { text-shadow: 0 0 15px #ffe600, 0 0 20px #ffe600; }
+}
+
+/* Анімація кнопок */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Контейнер з плавною анімацією */
+.container {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

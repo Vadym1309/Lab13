@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<title>Assassin's Creed</title>
+	</head>	
+	<body>
+		<nav>
+            <ul>
+                <li><a href="index.html"> Main page</a></li>
+                <li><a href="13_1.html"> Task 1</a></li>
+                <li><a href="13_2.html"> Task 2</a></li>
+                <li><a href="13_3.html"> Task 3</a></li>
+                <li><a href="13_4.html"> Task 4</a></li>
+                <li><a href="13_5.html"> Task 5</a></li>
+                <li><a href="13_6.html"> Task 6</a></li>
+                <li><a href="13_7.html"> Task 7</a></li>
+                <li><a href="13_8.html"> Task 8</a></li>
+
+            </ul>
+        </nav>
+		<script>
+			"use strict";
+
+			// Функція для виведення інформації про Assassin's Creed
+			function displayAssassinsCreedInfo() {
+				document.write("<div style='font-size: 20pt; color: darkred;'>Assassin's Creed - це популярна відеоігра, що охоплює різні епохи та історичні події. Головні герої - асасини, що борються за свободу і справедливість.</div>");
+			}
+
+			// Функція зберігається як змінна
+			let gameInfoFunction = displayAssassinsCreedInfo;
+
+			// Виклик функції через змінну
+			gameInfoFunction();  // Виведе інформацію про Assassin's Creed
+
+			// Додатковий виклик тієї ж функції через змінну
+			let anotherMessage = function() {
+				document.write("<div style='font-size: 18pt; color: darkblue;'>Assassin's Creed має безліч частин, і кожна з них розповідає унікальну історію, що відображає різні культури та цивілізації.</div>");
+			};
+
+			// Виклик додаткової функції
+			anotherMessage();
+		</script>
+	</body>
+</html>

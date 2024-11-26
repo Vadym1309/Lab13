@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<title>Кулаківці</title>
+	</head>	
+	<body>
+		<nav>
+            <ul>
+                <li><a href="index.html"> Main page</a></li>
+                <li><a href="13_1.html"> Task 1</a></li>
+                <li><a href="13_2.html"> Task 2</a></li>
+                <li><a href="13_3.html"> Task 3</a></li>
+                <li><a href="13_4.html"> Task 4</a></li>
+                <li><a href="13_5.html"> Task 5</a></li>
+                <li><a href="13_6.html"> Task 6</a></li>
+                <li><a href="13_7.html"> Task 7</a></li>
+                <li><a href="13_8.html"> Task 8</a></li>
+
+            </ul>
+        </nav>
+		<script>
+			"use strict";
+
+			// Функція для виведення інформації про Кулаківці
+			function printKulaikyInfo(text) {
+				document.write(`<div style="font-size: 20pt; color: blue;">${text}</div>`);
+			}
+
+			// Функція, яка приймає іншу функцію як аргумент
+			function displayVillageInfo(info, callback) {
+				callback(info);
+			}
+
+			// Опис села Кулаківці
+			let kulaikyInfo = "Кулаківці — мальовниче село в Україні, відоме своєю культурою.";
+
+			// Виклик функції displayVillageInfo з функцією printKulaikyInfo як аргументом
+			displayVillageInfo(kulaikyInfo, printKulaikyInfo);
+
+			// Додаткові приклади виклику з іншими повідомленнями про Кулаківці
+			displayVillageInfo("Село Кулаківці славиться своїм сільським господарством.", printKulaikyInfo);
+			displayVillageInfo("Я там народився і пив пиво з братвою.", printKulaikyInfo);
+		</script>
+	</body>
+</html>

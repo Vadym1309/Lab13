@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<title>Наполеонівські війни</title>
+	</head>	
+	<body>
+		<nav>
+            <ul>
+                <li><a href="index.html"> Main page</a></li>
+                <li><a href="13_1.html"> Task 1</a></li>
+                <li><a href="13_2.html"> Task 2</a></li>
+                <li><a href="13_3.html"> Task 3</a></li>
+                <li><a href="13_4.html"> Task 4</a></li>
+                <li><a href="13_5.html"> Task 5</a></li>
+                <li><a href="13_6.html"> Task 6</a></li>
+                <li><a href="13_7.html"> Task 7</a></li>
+                <li><a href="13_8.html"> Task 8</a></li>
+
+            </ul>
+        </nav>
+		<script>
+			"use strict";
+			
+			// Дата коронації Наполеона
+			let coronationDate = new Date(1804, 11, 2); // 2 грудня 1804 року (місяці нумеруються з 0)
+			
+			// Дата битви під Аустерліцом
+			let austerlitzDate = new Date(1805, 11, 2); // 2 грудня 1805 року
+
+			// Поточна дата
+			let today = new Date();
+
+			// Розрахунок років, що минули
+			let yearsSinceCoronation = today.getFullYear() - coronationDate.getFullYear();
+			let yearsSinceAusterlitz = today.getFullYear() - austerlitzDate.getFullYear();
+
+			// Якщо поточний день і місяць ще не досягли дня події, зменшуємо на 1
+			if (today.getMonth() < coronationDate.getMonth() || 
+			    (today.getMonth() === coronationDate.getMonth() && today.getDate() < coronationDate.getDate())) {
+				yearsSinceCoronation--;
+			}
+			if (today.getMonth() < austerlitzDate.getMonth() || 
+			    (today.getMonth() === austerlitzDate.getMonth() && today.getDate() < austerlitzDate.getDate())) {
+				yearsSinceAusterlitz--;
+			}
+
+			// Формування повідомлення
+			let message = "Минуло " + yearsSinceCoronation + " років з часу коронації Наполеона.\n";
+			message += "Минуло " + yearsSinceAusterlitz + " років з часу битви під Аустерліцом.";
+
+			// Вивід результатів
+			console.log(message);
+			alert(message);
+		</script>
+	</body>
+</html>
